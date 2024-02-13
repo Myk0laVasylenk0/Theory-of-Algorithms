@@ -1,11 +1,20 @@
-﻿
-int num_elements, index_min, min_element, i;
+﻿using System;
+using System.Diagnostics;
 
-int[] numbers = { 2, 4, 5, 7, 0, 4, 6, 6, 1, 4, -1 };
+
+var watch = Stopwatch.StartNew();
+
+
+int[] numbers = { 2, 4, 5, 7, 0, 4, 6, 6, 1, 4 };
+
+
+
 
 
 void FindMinElement()
 {
+    int num_elements, index_min, min_element, i;
+
     num_elements = numbers.GetLength(0);
     i = 0;
     index_min = 0;
@@ -33,9 +42,10 @@ void FindMinElement()
 
 
 FindMinElement();  
+
+watch.Stop();
+Console.WriteLine(
+          $"The Execution time of the program is {watch.ElapsedMilliseconds}ms");
+
 Console.ReadKey();
-
-
-
-
 
