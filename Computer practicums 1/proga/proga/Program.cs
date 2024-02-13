@@ -6,7 +6,6 @@ int[] numbers = { 2, 4, 5, 7, 0, 4, 6, 6, 1, 4, -1 };
 
 void FindMinElement()
 {
-    min_element = numbers[0];
     num_elements = numbers.GetLength(0);
     i = 0;
     index_min = 0;
