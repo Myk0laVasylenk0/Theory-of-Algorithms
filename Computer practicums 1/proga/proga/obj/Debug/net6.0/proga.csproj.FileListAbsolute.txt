@@ -1,0 +1,14 @@
+C:\Users\Nicolay\Desktop\KPI\Theory of Algorithms\Computer practicums 1\proga\proga\bin\Debug\net6.0\proga.exe
+C:\Users\Nicolay\Desktop\KPI\Theory of Algorithms\Computer practicums 1\proga\proga\bin\Debug\net6.0\proga.deps.json
+C:\Users\Nicolay\Desktop\KPI\Theory of Algorithms\Computer practicums 1\proga\proga\bin\Debug\net6.0\proga.runtimeconfig.json
+C:\Users\Nicolay\Desktop\KPI\Theory of Algorithms\Computer practicums 1\proga\proga\bin\Debug\net6.0\proga.dll
+C:\Users\Nicolay\Desktop\KPI\Theory of Algorithms\Computer practicums 1\proga\proga\bin\Debug\net6.0\proga.pdb
+C:\Users\Nicolay\Desktop\KPI\Theory of Algorithms\Computer practicums 1\proga\proga\obj\Debug\net6.0\proga.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nicolay\Desktop\KPI\Theory of Algorithms\Computer practicums 1\proga\proga\obj\Debug\net6.0\proga.AssemblyInfoInputs.cache
+C:\Users\Nicolay\Desktop\KPI\Theory of Algorithms\Computer practicums 1\proga\proga\obj\Debug\net6.0\proga.AssemblyInfo.cs
+C:\Users\Nicolay\Desktop\KPI\Theory of Algorithms\Computer practicums 1\proga\proga\obj\Debug\net6.0\proga.csproj.CoreCompileInputs.cache
+C:\Users\Nicolay\Desktop\KPI\Theory of Algorithms\Computer practicums 1\proga\proga\obj\Debug\net6.0\proga.dll
+C:\Users\Nicolay\Desktop\KPI\Theory of Algorithms\Computer practicums 1\proga\proga\obj\Debug\net6.0\refint\proga.dll
+C:\Users\Nicolay\Desktop\KPI\Theory of Algorithms\Computer practicums 1\proga\proga\obj\Debug\net6.0\proga.pdb
+C:\Users\Nicolay\Desktop\KPI\Theory of Algorithms\Computer practicums 1\proga\proga\obj\Debug\net6.0\proga.genruntimeconfig.cache
+C:\Users\Nicolay\Desktop\KPI\Theory of Algorithms\Computer practicums 1\proga\proga\obj\Debug\net6.0\ref\proga.dll
