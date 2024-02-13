@@ -1,13 +1,22 @@
 ﻿using System;
 using System.Diagnostics;
 
+int Min = 0;
+int Max = 1000;
 
-var watch = Stopwatch.StartNew();
+int ArrayLen = 1000; // change this several
 
+// this declares an integer array 
+// and initializes all of them to their default value
+// which is zero
+int[] numbers = new int[ArrayLen];
 
-int[] numbers = { 2, 4, 5, 7, 0, 4, 6, 6, 1, 4 };
-
-
+// filling array with random integers
+Random randNum = new Random();
+for (int i = 0; i < numbers.Length; i++)
+{
+    numbers[i] = randNum.Next(Min, Max);
+}
 
 
 
@@ -40,6 +49,7 @@ void FindMinElement()
     
 }
 
+var watch = Stopwatch.StartNew();
 
 FindMinElement();  
 
