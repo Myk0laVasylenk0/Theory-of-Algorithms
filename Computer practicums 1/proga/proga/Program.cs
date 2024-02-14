@@ -1,57 +1,83 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Text;
 
-int Min = 0;
-int Max = 1000;
 
-int ArrayLen = 1000; // change this several
+Console.Write("Enter file path: ");
+string path = Console.ReadLine();
 
-// this declares an integer array 
-// and initializes all of them to their default value
-// which is zero
-int[] numbers = new int[ArrayLen];
+//string path = @"C:\Users\Nicolay\Desktop\KPI\Theory of Algorithms\Computer practicums 1\300000_int.txt";
 
-// filling array with random integers
-Random randNum = new Random();
-for (int i = 0; i < numbers.Length; i++)
+
+var numList = new List<int> { };
+
+//string filepath1 = @"C:\Users\Nicolay\Desktop\KPI\Theory of Algorithms\Computer practicums 1\10_int.txt";
+//string filepath2 = @"C:\Users\Nicolay\Desktop\KPI\Theory of Algorithms\Computer practicums 1\100_int.txt";
+//string filepath3 = @"C:\Users\Nicolay\Desktop\KPI\Theory of Algorithms\Computer practicums 1\10000_int.txt";
+
+
+const Int32 BufferSize = 128;
+using (var fileStream = File.OpenRead(path))
+using (var streamReader = new StreamReader(fileStream, Encoding.UTF8, true, BufferSize))
 {
-    numbers[i] = randNum.Next(Min, Max);
+    String line;
+    while ((line = streamReader.ReadLine()) != null)
+    {
+        string trimmed_line = line.Trim();
+        string[] parts = trimmed_line.Split(",");
+
+
+        foreach (string part in parts)
+        {
+            if (part == "")
+            {
+                break;
+            }
+            else
+            {
+                numList.Add(int.Parse(part));
+            }
+        }
+    }
 }
+
 
 
 
 void FindMinElement()
 {
-    int num_elements, index_min, min_element, i;
+    int n, idx, min, i;
 
-    num_elements = numbers.GetLength(0);
+    int[] arr = numList.ToArray();
+
+    n = arr.GetLength(0);
     i = 0;
-    index_min = 0;
-    min_element = numbers[0];
+    idx = 0;
+    min = arr[0];
 
 
-    while (i < num_elements)
+    while (i < n)
     {
-        if (min_element > numbers[i])
+        if (min > arr[i])
         {
-            min_element = numbers[i];
-            index_min = i;
+            min = arr[i];
+            idx = i;
             i++;
         }
-        else 
+        else
         {
             i++;
         }
     }
-    string message = $"minimal element in array: {min_element} with index: {index_min}";
+    string message = $"minimal element in array: {min} with index: {idx}";
 
     Console.WriteLine(message);
-    
+
 }
 
 var watch = Stopwatch.StartNew();
 
-FindMinElement();  
+FindMinElement();
 
 watch.Stop();
 Console.WriteLine(
@@ -59,3 +85,22 @@ Console.WriteLine(
 
 Console.ReadKey();
 
+
+
+
+
+
+
+
+
+// this declares an integer array 
+// and initializes all of them to their default value
+// which is zero
+//int[] numbers = new int[ArrayLen];
+
+// filling array with random integers
+//Random randNum = new Random();
+//for (int i = 0; i < numbers.Length; i++)
+//{
+//    numbers[i] = randNum.Next(Min, Max);
+//}
