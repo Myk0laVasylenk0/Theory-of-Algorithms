@@ -2,105 +2,116 @@
 using System.Diagnostics;
 using System.Text;
 
+//var numList = new List<int> { };
+string confirmation;
 
-Console.Write("Enter file path: ");
-string path = Console.ReadLine();
-
-//string path = @"C:\Users\Nicolay\Desktop\KPI\Theory of Algorithms\Computer practicums 1\300000_int.txt";
-
-
-var numList = new List<int> { };
-
-//string filepath1 = @"C:\Users\Nicolay\Desktop\KPI\Theory of Algorithms\Computer practicums 1\10_int.txt";
-//string filepath2 = @"C:\Users\Nicolay\Desktop\KPI\Theory of Algorithms\Computer practicums 1\100_int.txt";
-//string filepath3 = @"C:\Users\Nicolay\Desktop\KPI\Theory of Algorithms\Computer practicums 1\10000_int.txt";
-
-
-const Int32 BufferSize = 128;
-using (var fileStream = File.OpenRead(path))
-using (var streamReader = new StreamReader(fileStream, Encoding.UTF8, true, BufferSize))
+do
 {
-    String line;
-    while ((line = streamReader.ReadLine()) != null)
+
+    try
     {
-        string trimmed_line = line.Trim();
-        string[] parts = trimmed_line.Split(",");
+        // Вводимо шлях до файлу з консолі та записуєму у змінну
 
+        Console.Write("Enter file path: ");
+        string path = Console.ReadLine();
 
-        foreach (string part in parts)
+        // Відкриваємо файл та перетворюємо його зміст на масив цілих чисел (якщо це можливо)
+        var numList = new List<int> { };
+
+        using (var fileStream = File.OpenRead(path))
+    
+        using (var streamReader = new StreamReader(fileStream, Encoding.UTF8, true))
         {
-            if (part == "")
+            
+            String line;
+            while ((line = streamReader.ReadLine()) != null)
             {
-                break;
-            }
-            else
-            {
-                numList.Add(int.Parse(part));
+                string trimmed_line = line.Trim();
+                string[] parts = trimmed_line.Split(",");
+
+
+                foreach (string part in parts)
+                {
+                    if (part == "")
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        numList.Add(int.Parse(part));
+                    }
+                }
             }
         }
+
+        // Функція для пошуку мінімального елемента та його індекса з масиву цілих чисел
+        // та вивід на консоль відповідного повідомлення (основний алгоритм)
+
+        void FindMinElement()
+        {
+            int n, idx, min, i;
+
+            int[] arr = numList.ToArray();
+
+            n = arr.GetLength(0);
+            i = 0;
+            idx = 0;
+            min = arr[0];
+
+
+            while (i < n)
+            {
+                if (min > arr[i])
+                {
+                    min = arr[i];
+                    idx = i;
+                    i++;
+                }
+                else
+                {
+                    i++;
+                }
+            }
+            string message = $"minimal element in array: {min} with index: {idx}";
+
+            Console.WriteLine(message);
+
+        }
+
+        // Відстежуємо час роботи основного алгоритму та вивидимо результат.
+
+        var watch = Stopwatch.StartNew();
+
+        FindMinElement();
+
+        watch.Stop();
+        Console.WriteLine(
+                  $"The Execution time of the program is {watch.ElapsedMilliseconds}ms");
+
+        Console.ReadKey();
     }
-}
 
+    // Ловимо помилки в роботі програми 
 
-
-
-void FindMinElement()
-{
-    int n, idx, min, i;
-
-    int[] arr = numList.ToArray();
-
-    n = arr.GetLength(0);
-    i = 0;
-    idx = 0;
-    min = arr[0];
-
-
-    while (i < n)
+    catch (FileNotFoundException) // На некоректність введеного шляху до фвйлу
     {
-        if (min > arr[i])
-        {
-            min = arr[i];
-            idx = i;
-            i++;
-        }
-        else
-        {
-            i++;
-        }
+        Console.WriteLine("please, enter the valid path to file");
     }
-    string message = $"minimal element in array: {min} with index: {idx}";
+    catch (FormatException) // На некоректність даних у самому файлі
+    {
+        Console.WriteLine("invalid data in file");
+    }
 
-    Console.WriteLine(message);
+    // Запит користувача на вихід з програми
+
+    Console.Write("exit the program? [y]/n" + "\n"); 
+    confirmation = Console.ReadLine();
 
 }
-
-var watch = Stopwatch.StartNew();
-
-FindMinElement();
-
-watch.Stop();
-Console.WriteLine(
-          $"The Execution time of the program is {watch.ElapsedMilliseconds}ms");
-
-Console.ReadKey();
+while (confirmation != "y");
 
 
 
 
 
 
-
-
-
-// this declares an integer array 
-// and initializes all of them to their default value
-// which is zero
-//int[] numbers = new int[ArrayLen];
-
-// filling array with random integers
-//Random randNum = new Random();
-//for (int i = 0; i < numbers.Length; i++)
-//{
-//    numbers[i] = randNum.Next(Min, Max);
-//}
