@@ -188,24 +188,7 @@ new Student { Id = 7, Name = "Вікторія", SurName = "Бондаренко
 new Student { Id = 8, Name = "Артем", SurName = "Павленко" },
 new Student { Id = 9, Name = "Вероніка", SurName = "Коваленко" },
 new Student { Id = 10, Name = "Олег", SurName = "Григоренко" },
-new Student { Id = 11, Name = "Марія", SurName = "Ковальчук" },
-new Student { Id = 12, Name = "Євгенія", SurName = "Шевченко" },
-new Student { Id = 13, Name = "Артем", SurName = "Кравченко" },
-new Student { Id = 14, Name = "Анастасія", SurName = "Петренко" },
-new Student { Id = 15, Name = "Данило", SurName = "Мельник" },
-new Student { Id = 16, Name = "Олена", SurName = "Коваленко" },
-new Student { Id = 17, Name = "Ігор", SurName = "Лисенко" },
-new Student { Id = 18, Name = "Катерина", SurName = "Шевченко" },
-new Student { Id = 19, Name = "Сергій", SurName = "Павленко" },
-new Student { Id = 20, Name = "Вікторія", SurName = "Григоренко" },
-new Student { Id = 21, Name = "Михайло", SurName = "Ковальчук" },
-new Student { Id = 22, Name = "Наталія", SurName = "Шевченко" },
-new Student { Id = 23, Name = "Анастасія", SurName = "Кравченко" },
-new Student { Id = 24, Name = "Юрій", SurName = "Петренко" },
-new Student { Id = 25, Name = "Валерія", SurName = "Мельник" },
-new Student { Id = 26, Name = "Дмитро", SurName = "Коваленко" },
-new Student { Id = 27, Name = "Марина", SurName = "Лисенко" },
-new Student { Id = 28, Name = "Олександра", SurName = "Шевченко" },
+
 
         };
 

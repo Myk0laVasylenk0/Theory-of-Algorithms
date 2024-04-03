@@ -1,10 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Array-based-queue",
-    "\\Array-based-queue\\Program",
-    "\\List-based-queue",
-    "\\List-based-queue\\Program"
+    "\\Array-based-Queue",
+    "\\Array-based-Queue\\Array-based-Queue",
+    "\\List-based-Queue",
+    "\\List-based-Queue\\List-based-Queue"
   ],
+  "SelectedNode": "\\Array-based-Queue\\Array-based-Queue\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
