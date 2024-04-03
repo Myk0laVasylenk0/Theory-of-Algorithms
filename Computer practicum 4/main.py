@@ -259,15 +259,4 @@ while exit_program == False:
         exit_program = True
     print('')
 
-#
-# hash_table_size = 20
-# hash_table_girls = FixedLengthDict(hash_table_size)
-#
-# add_element_to_hash_table(hash_table_girls,
-#                           ("Maria", "Sarabun", date(2005, 12, 4).isoformat()),
-#                           zonding_method = "liniar zonding"
-#                           )
 
-
-# def squared_zonding():
-#     pass
