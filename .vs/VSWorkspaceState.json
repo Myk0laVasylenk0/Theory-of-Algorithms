@@ -1,10 +1,14 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Computer practicums 1",
-    "\\Computer practicums 1\\proga",
-    "\\Computer practicums 1\\proga\\proga"
+    "\\Computer practicum 2",
+    "\\Computer practicum 4",
+    "\\Computer practicum 5",
+    "\\Computer practicum 7",
+    "\\Computer practicum 7\\SortAlgs",
+    "\\Computer practicum 7\\SortAlgs\\SortAlgs",
+    "\\Computer practicums 1"
   ],
-  "SelectedNode": "\\Computer practicums 1\\proga\\proga\\Program.cs",
+  "SelectedNode": "\\Computer practicum 7\\SortAlgs\\SortAlgs\\HeapSort.cs",
   "PreviewInSolutionExplorer": false
 }

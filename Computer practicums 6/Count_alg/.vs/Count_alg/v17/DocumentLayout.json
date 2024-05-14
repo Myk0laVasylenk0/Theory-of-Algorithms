@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Nicolay\\Desktop\\KPI\\Theory of Algorithms\\Computer practicums 6\\Count_alg\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6B6180C3-D5DB-4DDF-99C6-DD8E6D1F3A3B}|Count_alg\\Count_alg.csproj|c:\\users\\nicolay\\desktop\\kpi\\theory of algorithms\\computer practicums 6\\count_alg\\count_alg\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B6180C3-D5DB-4DDF-99C6-DD8E6D1F3A3B}|Count_alg\\Count_alg.csproj|solutionrelative:count_alg\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Nicolay\\Desktop\\KPI\\Theory of Algorithms\\Computer practicums 6\\Count_alg\\Count_alg\\Program.cs",
+              "RelativeDocumentMoniker": "Count_alg\\Program.cs",
+              "ToolTip": "C:\\Users\\Nicolay\\Desktop\\KPI\\Theory of Algorithms\\Computer practicums 6\\Count_alg\\Count_alg\\Program.cs",
+              "RelativeToolTip": "Count_alg\\Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T08:34:41.095Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

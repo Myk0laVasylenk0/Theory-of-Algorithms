@@ -1,0 +1,41 @@
+// Binary Search Tree Insertion
+digraph {
+	A [label="Start Insert"]
+	B [label="root is None?"]
+	C [label="Create root node"]
+	D [label=_insert_recursive]
+	E [label="End Insert"]
+	A -> B
+	B -> C
+	B -> D
+	D -> E
+	F [label="Start _insert_recursive"]
+	G [label="key < node.val?"]
+	H [label="node.left is None?"]
+	I [label="Create node.left"]
+	J [label="Recursive insert left"]
+	K [label="node.right is None?"]
+	L [label="Create node.right"]
+	M [label="Recursive insert right"]
+	N [label="End _insert_recursive"]
+	F -> G
+	G -> H
+	H -> I
+	G -> J
+	G -> K
+	K -> L
+	K -> M
+	K -> N
+	{
+		rank=same
+		F
+		G
+		H
+		I
+		J
+		K
+		L
+		M
+		N
+	}
+}

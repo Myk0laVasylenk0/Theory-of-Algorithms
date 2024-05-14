@@ -88,3 +88,28 @@ def print_dict_as_pretty_table_hided(d):
             dob = 'Empty'
         print_row([id, dob], column_widths)
         print_border(column_widths)
+
+
+my_dict = {
+    0: ('Andjelika', 'Vosnyak', '2006-05-20'),
+    1: ('Valeria', 'Korol', '2005-06-15'),
+    2: ('Anastasia', 'Malinska', '2006-09-10'),
+    3: ('Anastasia', 'Prokopchuk', '2006-05-28'),
+    4: None,
+    5: 'Empty',
+    6: None,
+    7: None,
+    8: ('Maria', 'Sarabun', '2005-12-04'),
+    9: None,
+    10: None,
+    11: ('Maria', 'Sarabun', '2005-12-04'),
+    12: ('Daryna', 'Dzubenko', '2006-06-23'),
+    13: None,
+    14: None,
+    15: None,
+    16: None,
+    17: ('Sofia', 'Katasonova', '2006-06-11'),
+    18: ('Daryna', 'Rudiuk', '2006-07-02'),
+    19: ('Sofia', 'Lubarska', '2005-11-25')
+}
+# print_dict_as_pretty_table_hided(my_dict)
